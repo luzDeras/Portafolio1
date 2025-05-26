@@ -15,5 +15,4 @@ export default defineConfig({
     assetsDir: 'assets',
   },
   assetsInclude: ['**/*.jpg', '**/*.png'],
-  base: '/Portafolio/'
 })
