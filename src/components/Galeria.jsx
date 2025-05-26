@@ -4,6 +4,27 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { SiAdobephotoshop, SiAdobeillustrator } from "react-icons/si";
 
+// Importar todas las imágenes
+import portfolio1_01 from '../assets/luz/images/portfolio1_01.webp';
+import portfolio1_02 from '../assets/luz/images/portfolio1_02.webp';
+import portfolio1_03 from '../assets/luz/images/portfolio1_03.webp';
+import portfolio1_04 from '../assets/luz/images/portfolio1_04.webp';
+import portfolio1_05 from '../assets/luz/images/portfolio1_05.webp';
+import portfolio1_06 from '../assets/luz/images/portfolio1_06.webp';
+import portfolio1_07 from '../assets/luz/images/portfolio1_07.webp';
+import portfolio1_08 from '../assets/luz/images/portfolio1_08.webp';
+import portfolio1_09 from '../assets/luz/images/portfolio1_09.webp';
+import portfolio1_10 from '../assets/luz/images/portfolio1_10.webp';
+import portfolioParte2 from '../assets/luz/images/portfolio-parte-2-copia.webp';
+import portfolioParte3_01 from '../assets/luz/images/portfolio-parte-3_01.webp';
+import portfolioParte3_02 from '../assets/luz/images/portfolio-parte-3_02.webp';
+import portfolioParte3_03 from '../assets/luz/images/portfolio-parte-3_03.webp';
+import portfolioParte3_04 from '../assets/luz/images/portfolio-parte-3_04.webp';
+import portfolioParte3_05 from '../assets/luz/images/portfolio-parte-3_05.webp';
+import concepto from '../assets/luz/images/concepto.webp';
+import portfolioParte3_07 from '../assets/luz/images/portfolio-parte-3_07.webp';
+import portfolioParte3_08 from '../assets/luz/images/portfolio-parte-3_08.webp';
+
 export default function Galeria() {
   const particlesInit = useCallback(async (engine) => {
     await loadSlim(engine);
@@ -78,25 +99,25 @@ export default function Galeria() {
   };
 
   const imgs = [
-    '/src/assets/luz/images/portfolio1_01.webp',
-    '/src/assets/luz/images/portfolio1_02.webp',
-    '/src/assets/luz/images/portfolio1_03.webp',
-    '/src/assets/luz/images/portfolio1_04.webp',
-    '/src/assets/luz/images/portfolio1_05.webp',
-    '/src/assets/luz/images/portfolio1_06.webp',
-    '/src/assets/luz/images/portfolio1_07.webp',
-    '/src/assets/luz/images/portfolio1_08.webp',
-    '/src/assets/luz/images/portfolio1_09.webp',
-    '/src/assets/luz/images/portfolio1_10.webp',
-    '/src/assets/luz/images/portfolio-parte-2-copia.webp',
-    '/src/assets/luz/images/portfolio-parte-3_01.webp',
-    '/src/assets/luz/images/portfolio-parte-3_02.webp',
-    '/src/assets/luz/images/portfolio-parte-3_03.webp',
-    '/src/assets/luz/images/portfolio-parte-3_04.webp',
-    '/src/assets/luz/images/portfolio-parte-3_05.webp',
-    '/src/assets/luz/images/concepto.webp',
-    '/src/assets/luz/images/portfolio-parte-3_07.webp',
-    '/src/assets/luz/images/portfolio-parte-3_08.webp',
+    portfolio1_01,
+    portfolio1_02,
+    portfolio1_03,
+    portfolio1_04,
+    portfolio1_05,
+    portfolio1_06,
+    portfolio1_07,
+    portfolio1_08,
+    portfolio1_09,
+    portfolio1_10,
+    portfolioParte2,
+    portfolioParte3_01,
+    portfolioParte3_02,
+    portfolioParte3_03,
+    portfolioParte3_04,
+    portfolioParte3_05,
+    concepto,
+    portfolioParte3_07,
+    portfolioParte3_08,
   ];
 
   const containerVariants = {
@@ -159,7 +180,7 @@ export default function Galeria() {
 { i===0 && (
   <div className="absolute top-1/2 bottom-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-auto">
     <audio controls className="w-48">
-      <source src="/musica.mp3" type="audio/mpeg" />
+      <source src="musica.mp3" type="audio/mpeg" />
       Tu navegador no soporta el audio.
     </audio>
   </div>
